@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pengisian Data Pengujian</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="date"], select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2e86de;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1b4f72;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Form Permohonan Pengujian UTTP</h2>
+    <form>
+      <label for="jenis">Jenis Permohonan</label>
+      <select id="jenis" name="jenis">
+        <option value="tera">Tera</option>
+        <option value="tera-ulang">Tera Ulang</option>
+      </select>
+
+      <label for="nama">Nama Pemilik</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama pemilik">
+
+      <label for="tanggal">Tanggal Permohonan Pengujian</label>
+      <input type="date" id="tanggal" name="tanggal">
+
+      <label for="nomor-seri">Nomor Seri</label>
+      <input type="text" id="nomor-seri" name="nomor-seri" placeholder="Masukkan nomor seri">
+
+      <label for="verifikasi-e">Interval Skala Verifikasi (e)</label>
+      <input type="text" id="verifikasi-e" name="verifikasi-e" placeholder="Masukkan nilai e">
+
+      <label for="skala-d">Interval Skala Terkecil (d)</label>
+      <input type="text" id="skala-d" name="skala-d" placeholder="Masukkan nilai d">
+
+      <label for="kapasitas">Kapasitas Maksimum</label>
+      <input type="text" id="kapasitas" name="kapasitas" placeholder="Masukkan kapasitas maksimum">
+
+      <label for="kelas">Kelas Ketelitian</label>
+      <input type="text" id="kelas" name="kelas" placeholder="Masukkan kelas ketelitian">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
